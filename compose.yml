@@ -1,0 +1,37 @@
+services:
+  pandoccer:
+    image: pandoccer
+    build: ./tools/pandoccer
+  nginxer:
+    image: nginxer
+    build: ./tools/nginxer
+    ports:
+      - "80:80"
+    environment:
+      - MODE=${MODE:-dev}
+    volumes:
+      - ./public:/usr/share/nginx/html:ro
+
+  koti:
+    image: pandoccer
+    environment:
+      - MODE=${MODE:-dev}
+    volumes:
+      - ./docs/koti:/src
+      - ./public/koti:/output
+
+  ai:
+    image: pandoccer
+    environment:
+      - MODE=${MODE:-dev}
+    volumes:
+      - ./docs/ai:/src
+      - ./public/ai:/output
+
+  copilot:
+    image: pandoccer
+    environment:
+      - MODE=${MODE:-dev}
+    volumes:
+      - ./docs/copilot:/src
+      - ./public/copilot:/output
