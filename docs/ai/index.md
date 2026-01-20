@@ -238,6 +238,12 @@ Eettisesti AI saattaa myös tuottaa koodia, joka loukkaa yksityisyyttä, syrjii 
 
 Lisäksi ohjelmakoodin tai projektin mukana on usein tiedostoja, joissa on liikesalaisuuksia. Käytettäessä AI:ta koodin generointiin on tärkeää varmistaa, että nämä tiedot eivät vuoda ulkopuolisille. Monet AI-palvelut tallentavat käyttäjien syötteitä ja käyttävät niitä mallin jatkokoulutukseen, mikä voi johtaa arkaluonteisten tietojen vuotamiseen. Ohjelmistokehittäjien on oltava tietoisia tästä riskistä ja varmistettava, että he noudattavat organisaationsa tietoturvapolitiikkaa.
 
+### Energian käyttö ja ympäristövaikutukset
+
+AI mallit käyttävät energiaa kahdessa eri vaiheessa: mallin kouluttamisessa ja mallin ajamisessa (inference). Mallin kouluttaminen vaatii valtavia määriä laskentatehoa ja energiaa. Mallin ajaminen, eli kun malli tuottaa vastauksia käyttäjien pyyntöihin, kuluttaa myös energiaa, mutta yleensä paljon vähemmän kuin koulutusvaihe.
+
+Ohjelmistokehittäjä voi vaikuttaa tai ymmärtää energiankäyttöä hyvin vähän, koska mallin ajaminen tapahtuu yleensä pilvipalvelimilla, joita hallinnoi kolmas osapuoli. Käytännössä ainoa tapa vähentää energiankulutusta on antaa täsmällisempiä syötteitä ja välttää turhaa kontekstin lähettämistä, mikä vähentää mallin työmäärää. Kontekstin minimoimisella on toinenkin etu: se nopeuttaa vasteaikaa ja parantaa tarkkuutta, koska malli ei joudu käsittelemään ylimääräistä tietoa.
+
 ### Pilotti ja Co-pilotti
 
 AI on kuten lentokoneen copilot: se auttaa ja tukee, mutta ei korvaa pääpilottia. Pilottina on edelleen ohjelmistokehittäjä, joka ymmärtää kokonaisuuden, tekee päätökset ja kantaa vastuun lopputuloksesta. AI voi auttaa koodin generoinnissa, virheiden etsimisessä ja monissa muissa tehtävissä, mutta se ei voi ottaa vastuuta projektin onnistumisesta tai epäonnistumisesta.

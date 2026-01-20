@@ -140,6 +140,8 @@ Sitten kun tallennat tiedoston ja kokeilet uudestaan, niin Copilot noudattaa ohj
 
 ![Copilot noudattaa ohjeita](images/copilot/26-ilman-kommentteja.png){#fig:26-ilman-kommentteja}
 
+Säännöt ovat jokaisen kehittäjän henkilökohtaisia tyylivalintoja, joten voit muokata niitä vapaasti.
+
 ## Täydennys
 
 Copilot osaa myös täydentää koodia, kun kirjoitat jotain sinne päin. Voit hyväksyä ehdotuksen painamalla tab-näppäintä (@fig:27-taydennys).
